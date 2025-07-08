@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "lib": ["es2017", "DOM"],
+    "allowJs": true,
+    "jsx": "react-native",
+    "noEmit": true,
+    "isolatedModules": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "typeRoots": ["node_modules/@types"],
+    "paths": {
+      "@": ["./src/"],
+      "@assets": ["./src/assets/"],
+      "@configs": ["./src/configs/"],
+      "@common": ["./src/common"],
+      "@contexts": ["./src/contexts/"],
+      "@helpers": ["./src/helpers/"],
+      "@hooks": ["./src/hooks/"],
+      "@navigation": ["./src/navigation/"],
+      "@types": ["./src/types/"],
+      "@enums": ["./src/enums/"],
+      "@modules": ["./src/modules"],
+      "@appServices": ["./src/appServices"],
+      "@databaseServices": ["./src/databaseServices"],
+      "@collections": ["./src/collections"]
+    },
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true
+  },
+  "include": ["./src", "**/*.tsx", "**/*.ts", "**/*.json", "**/*.ttf", "typings/*.d.ts", "declarations.d.ts"],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js",
+    "dist",
+    "__tests__"
+  ]
+}
